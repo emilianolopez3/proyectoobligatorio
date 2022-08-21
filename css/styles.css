@@ -177,6 +177,8 @@ footer p {
 
 main {
   min-height: calc(100vh - 210px);
+  text-align: center;
+
 }
 
 a.custom-card,
@@ -190,9 +192,18 @@ a.custom-card:hover {
 }
 
 .image {
-  width: 550px;
-
+  width: 400px;
 }
-* {
-  text-align: center;
+
+::placeholder {
+  float: left;
+  padding-left: 2%;
+}
+
+button {
+  width: 90px;
+  height: 40px;
+  color: #fff;
+  background-color: #0d6efd;
+  border-color: #0d6efd;
 }
