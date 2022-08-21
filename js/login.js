@@ -4,5 +4,5 @@ const button = document.getElementById("regBtn");
 
 
 function redirect() {
-    window.location.href = "https://github.com/emilianolopez3/proyectoobligatorio"
+    window.location.href = "https://emilianolopez3.github.io/proyectoobligatorio/"
 }
