@@ -1,12 +1,13 @@
 var carArray = [];
 
 function showCarList(array) {
+for (let car of array) {
     document.getElementById("container").innerHTML += `
     
     <div class="list-group-item list-group-item-action">
     <div class="row">
         <div class="col-3">
-            <img src="` + car.imgSrc + `" alt="product image" class="img-thumbnail">
+            <img src="` + car.image + `" alt="product image" class="img-thumbnail">
         </div>
         <div class="col">
             <div class="d-flex w-100 justify-content-between">
@@ -22,13 +23,14 @@ function showCarList(array) {
 </div>
 `
 }
+}
 
 document.addEventListener("DOMContentLoaded", function(e){
-    getJSONData(INFO_CAR_URL).then(function(resultObj){
+    getJSONData(INFO_CAR).then(function(resultObj){
         if (resultObj.status === "ok")
         {
             carArray = resultObj.data;
-            showAutosList(carArray.products);
+            showCarList(carArray.products);
             console.log(carArray.products)
         }
     });

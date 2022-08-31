@@ -21,4 +21,3 @@ if (passwordValue === "") {
 } else {
     setSuccessFor(password)
 }
-
