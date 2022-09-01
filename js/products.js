@@ -1,8 +1,8 @@
 var carArray = [];
 
 function showCarList(array) {
-for (let car of array) {
-    document.getElementById("container").innerHTML += `
+    for (let car of array) {
+        document.getElementById("container").innerHTML += `
     
     <div class="list-group-item list-group-item-action">
     <div class="row">
@@ -12,8 +12,8 @@ for (let car of array) {
         <div class="col">
             <div class="d-flex w-100 justify-content-between">
                 <div class="mb-1">
-                <h4>`+ car.name +" " + car.currency + " " + car.cost +`</h4> 
-                <p> `+ car.description +`</p> 
+                <h4>`+ car.name + " " + car.currency + " " + car.cost + `</h4> 
+                <p> `+ car.description + `</p> 
                 </div>
                 <small class="text-muted">` + car.soldCount + ` artículos</small>
             </div>
@@ -22,13 +22,12 @@ for (let car of array) {
     </div>
 </div>
 `
-}
+    }
 }
 
-document.addEventListener("DOMContentLoaded", function(e){
-    getJSONData(INFO_CAR).then(function(resultObj){
-        if (resultObj.status === "ok")
-        {
+document.addEventListener("DOMContentLoaded", function (e) {
+    getJSONData(INFO_CAR).then(function (resultObj) {
+        if (resultObj.status === "ok") {
             carArray = resultObj.data;
             showCarList(carArray.products);
             console.log(carArray.products)
