@@ -4,6 +4,6 @@ function redireccionar() {
    if (email != "" && contrasenia != "") {
       location.href = "index.html"      
    } else {  
-      alert("Debe ingreser email y contraseña")
+      alert("Debe ingreser email o contraseña")
    }
 }
