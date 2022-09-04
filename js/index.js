@@ -10,5 +10,11 @@ document.addEventListener("DOMContentLoaded", function(){
     document.getElementById("muebles").addEventListener("click", function() {
         localStorage.setItem("catID", 103);
         window.location = "products.html"
-    });
+    });  
 });
+
+    document.addEventListener("DOMContentLoaded", function() {
+        var usuario = localStorage.getItem("email", email)
+        document.getElementById("email").innerHTML = usuario;
+    });
+    
