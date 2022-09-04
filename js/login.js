@@ -8,4 +8,3 @@ function redirect() {
       alert("Debe ingreser email o contraseña")
    }
 }
-
