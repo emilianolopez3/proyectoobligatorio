@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function(){
     });  
 });
 
-    document.addEventListener("DOMContentLoaded", function() {
+    document.addEventListener("DOMContentLoaded", () => {
         var usuario = localStorage.getItem("email", email)
         document.getElementById("email").innerHTML = usuario;
     });
