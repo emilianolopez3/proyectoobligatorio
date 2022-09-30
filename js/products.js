@@ -10,11 +10,11 @@ function setCatID(id) {
 }
 
 function showProductList(array){
-
+  
   let htmlContentToAppend = "";
   for(let i = 0; i < currentProductArray.length; i++){
       let product = currentProductArray[i];
-
+      
       if (((minCount == undefined) || (minCount != undefined && parseInt(product.productCount) >= minCount)) &&
           ((maxCount == undefined) || (maxCount != undefined && parseInt(product.productCount) <= maxCount))){
 
