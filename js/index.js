@@ -18,7 +18,3 @@ document.addEventListener("DOMContentLoaded", function(){
         document.getElementById("email").innerHTML = usuario;
     });
     
-    function setCatID(id) {
-        localStorage.setItem("catID", id);
-        window.location = "products.html"
-      }
